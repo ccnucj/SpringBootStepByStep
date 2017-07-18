@@ -2,6 +2,9 @@ package com.wisely.highlight_spring4.ch2.scope;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+/**
+ * beançš„ scope ä½¿ç”¨  å¤šä¸ºsingleton  å’Œ prototype
+ */
 public class Main {
 
 	public static void main(String[] args) {
@@ -13,8 +16,8 @@ public class Main {
         DemoPrototypeService p1 = context.getBean(DemoPrototypeService.class);
         DemoPrototypeService p2 = context.getBean(DemoPrototypeService.class);
 
-        System.out.println("s1Óës2ÊÇ·ñÏàµÈ£º"+s1.equals(s2));
-        System.out.println("p1Óëp2ÊÇ·ñÏàµÈ£º"+p1.equals(p2));
+        System.out.println("s1å’Œs2æ¯”è¾ƒ"+s1.equals(s2));
+        System.out.println("p1å’Œp2æ¯”è¾ƒ"+p1.equals(p2));
         
         context.close();
 	}
