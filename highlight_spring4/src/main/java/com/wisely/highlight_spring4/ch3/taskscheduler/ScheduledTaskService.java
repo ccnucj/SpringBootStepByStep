@@ -1,10 +1,10 @@
 package com.wisely.highlight_spring4.ch3.taskscheduler;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @Service
 public class ScheduledTaskService {
@@ -13,12 +13,12 @@ public class ScheduledTaskService {
 
 	  @Scheduled(fixedRate = 5000) //1
 	  public void reportCurrentTime() {
-	       System.out.println("Ã¿¸ôÎåÃëÖ´ĞĞÒ»´Î " + dateFormat.format(new Date()));
+	       System.out.println("æ¯éš”äº”ç§’é’Ÿæ‰§è¡Œä¸€æ¬¡" + dateFormat.format(new Date()));
 	   }
 
 	  @Scheduled(cron = "0 28 11 ? * *"  ) //2
 	  public void fixTimeExecution(){
-	      System.out.println("ÔÚÖ¸¶¨Ê±¼ä " + dateFormat.format(new Date())+"Ö´ĞĞ");
+	      System.out.println("åœ¨æŒ‡å®šæ—¶é—´ " + dateFormat.format(new Date())+"Ö´æ‰§è¡Œ");
 	  }
 
 }
