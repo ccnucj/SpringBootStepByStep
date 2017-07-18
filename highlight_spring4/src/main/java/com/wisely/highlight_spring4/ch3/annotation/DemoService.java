@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class DemoService {
 	
 	public void outputResult(){
-		System.out.println("´Ó×éºÏ×¢½âÅäÖÃÕÕÑù»ñµÃµÄbean");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½bean");
 	}
 
 }
