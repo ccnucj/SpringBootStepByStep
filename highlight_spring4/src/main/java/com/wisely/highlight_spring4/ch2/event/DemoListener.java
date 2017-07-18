@@ -10,7 +10,7 @@ public class DemoListener implements ApplicationListener<DemoEvent> {
 		
 		String msg = event.getMsg();
 		
-		System.out.println("我(bean-demoListener)接受到了bean-demoPublisher发布的消息:"
+		System.out.println("listener鏀跺埌淇℃伅"
 				+ msg);
 
 	}

@@ -6,7 +6,8 @@ public class Main {
 	public static void main(String[] args) {
 		 AnnotationConfigApplicationContext context =
 	                new AnnotationConfigApplicationContext(EventConfig.class);
-		 
+
+		 //通过publisher发布信息
 		 DemoPublisher demoPublisher = context.getBean(DemoPublisher.class);
 		 
 		 demoPublisher.publish("hello application event");
