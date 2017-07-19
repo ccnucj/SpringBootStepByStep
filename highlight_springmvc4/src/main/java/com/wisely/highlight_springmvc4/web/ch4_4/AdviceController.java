@@ -8,6 +8,8 @@ import com.wisely.highlight_springmvc4.domain.DemoObj;
 
 @Controller
 public class AdviceController {
+
+	//此处使用了在ControllerAdvice里声明的全局键值对
 	@RequestMapping("/advice")
 	public String getSomething(@ModelAttribute("msg") String msg,DemoObj obj){//1
 		
