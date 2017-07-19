@@ -19,6 +19,7 @@ public class ExceptionHandlerAdvice {
 		return modelAndView;
 	}
 
+	// @ModelAttribute注解将键值对添加到全局，所有注解的 @RequestMapping的方法可以获取此键值对
 	@ModelAttribute //3
 	public void addAttributes(Model model) {
 		model.addAttribute("msg", "额外信息"); //3
