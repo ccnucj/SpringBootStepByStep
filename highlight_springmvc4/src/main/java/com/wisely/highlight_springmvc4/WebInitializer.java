@@ -1,13 +1,17 @@
 package com.wisely.highlight_springmvc4;
 
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRegistration.Dynamic;
-
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRegistration.Dynamic;
+
+/**
+ * 替代web.xml
+ * 需要实现WebApplicationInitializer 接口
+ */
 public class WebInitializer implements WebApplicationInitializer {//1
 
 	@Override
