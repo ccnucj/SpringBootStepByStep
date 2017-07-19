@@ -25,8 +25,9 @@ public class ExceptionHandlerAdvice {
 		model.addAttribute("msg", "额外信息"); //3
 	}
 
+	//对前台请求的参数做处理
 	@InitBinder //4
 	public void initBinder(WebDataBinder webDataBinder) {
-		webDataBinder.setDisallowedFields("id"); //5
+		webDataBinder.setDisallowedFields("name"); //5
 	}
 }
