@@ -62,6 +62,7 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {// 2
 
     /**
      * 重写configurePathMatch方法，可以不忽略"."后面的参数，否则会忽略比如  xxxx?name=aaa.bbbb 后面的bbbb会被忽略
+     *
      * @param configurer
      */
     @Override
