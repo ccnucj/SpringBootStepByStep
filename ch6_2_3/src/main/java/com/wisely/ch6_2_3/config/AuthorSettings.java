@@ -2,6 +2,11 @@ package com.wisely.ch6_2_3.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+
+/**
+ * 简单使用配置bean
+ */
+
 @Component
 @ConfigurationProperties(prefix = "author") //1 
 public class AuthorSettings {
